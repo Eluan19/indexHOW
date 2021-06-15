@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header-container" id="Home">
+    <div class="header">
+      <div class="checkbox-container">
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="toggle">
+          <label class="checkbox" for="toggle" id="menu-icon">
+            <div class="trace"></div>
+            <div class="trace"></div>
+            <div class="trace"></div>
+          </label>
+          <div class="menu"></div>
+          <nav class="menu-items">
+            <ul id="ul-menu">
+              <li>
+                <a href="#Home">Home</a>
+              </li>
+              <li>
+                <a href="#projetos">Projetos</a>
+              </li>
+              <li>
+                <a href="#sobre">Sobre</a>
+              </li>
+              <li>
+                <a href="#contatos">Contatos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <h1>Projeto Univali</h1>
+    <h2>Front-end Developer</h2>
+    <div class="social-media">
+      <a href="https://github.com/Eluan19">Github</a>
+      <a href="https://www.instagram.com/grr_luan/">Instagram</a>
+    </div>
+  </header>
+  <main class="container" id="projetos">
+    <div class="card-container">
+      <div class="card">
+        <div class="card-wrapper">
+          <h2>Eluan</h2>
+          <p>Vem ver!</p>
+        </div>
+      </div>
+      <div class="card-text">
+        <p>Meu primeiro projeto foi na Univali, na graduação de Ads(Analise de desenvolvimento de sistemas) o projeto
+          foi criar uma calculadora de conversão de numeros binários, a linguagem de programação que foi usada para
+          fazer a calculadora foi C++,
+          foi usada uma conversão de numeros binarios para decimal e vise versa, no final do projeto da calculadora foi
+          feito um video explicando passo a passo sobre cada código que foi usado na calculadora</p>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-wrapper">
+          <h2>Rafael</h2>
+          <p>Vem ver!</p>
+        </div>
+      </div>
+      <div class="card-text">
+        Meu primeiro projeto foi um projeto de eletrotécnica, esse projeto tratava-se de um projeto de conclusão do
+        curso técnico industrial em eletromecânica. No projeto foram empregados conhecimentos adquiridos durante todo o
+        curso e pesquisas referentes a padrões de instalações e normas técnicas da CELESC e normas de proteção e
+        segurança da ABNT.
+        Com a experiência da execução deste projeto, ficou ainda mais claro que instalação elétrica é um serviço técnico
+        que exige conhecimento e técnica, tendo em que uma instalação elétrica mau feita pode resultar em desastres.
+      </div>
+    </div>
+  </main>
+
+  <header class=".container-fluid" id="sobre">
+    <div class="row-fluid">
+      <h2>Rafael</h2>
+      <p>Vem ver!</p>
+      <div class="text-center">
+        <p>Com mais de 15 anos de experiência na área técnica, entre funções na construção naval, serviços técnicos a
+          bordo de embarcações durante navegações e indústria.
+          Por isso, estou aqui, para adquirir novos conhecimentos e buscar uma formação na área de análise e
+          desenvolvimento de sistemas e quem sabe poder desenvolver sistemas que possam não só me fazer evoluir
+          profissionalmente ou pessoalmente, mas que também possa auxiliar o próximo.</p>
+      </div>
+    </div>
+    <div class="fluid">
+      <h2>Eluan</h2>
+      <p>Vem ver!</p>
+      <div class="text-center">
+        <p>Tenho apenas 19 anos e muito jovem descobri que sou apaixonado pela tecnologia, com 15 anos tive a
+          oportunidade de ter meu primeiro emprego na área de tecnologia em Gestão de TI, agora com 19 anos comecei
+          minha primeira graduação em ADS(Analise de desenvolvimento de sistemas) procuro evoluir em ADS para
+          futuramente crescer não so em experiencia mas tambem profissionalmente, após essa gradução busco fazer minha
+          pós em ADS e, futuramente engenharia de software, gestão em TI, sistema da informação, gestão de segurança da
+          informação.</p>
+      </div>
+    </div>
+    <center>
+      <h1>Sobre</h1>
+    </center>
+    <img src="https://i.imgur.com/i7LDUKa.png" alt="">
+  </header>
+
+  <footer class="footer" id="contatos">
+    <div class="row">
+      <center>
+        <h2>Contatos</h2>
+      </center>
+      <p>Vem ver!</p>
+      <div class="text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet neque distinctio omnis vitae? Ratione,
+          perferendis neque molestias adipisci sit minus dolorum quidem veniam odio praesentium autem modi culpa,
+          dolorem cum.</p>
+      </div>
+  </footer>
+
+  <script>
+    let ulMenu;
+    let menuIcon;
+
+    function toggleMenu() {
+      if (menuIcon) menuIcon.click();
+    }
+
+    document.body.onload = function () {
+      ulMenu = document.getElementById('ul-menu');
+      menuIcon = document.getElementById('menu-icon');
+
+      if (ulMenu) {
+        for (let i = 0; i < ulMenu.children.length; i++) {
+          ulMenu.children[i].onclick = toggleMenu;
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
